@@ -1,6 +1,10 @@
 class ArtistsController < ApplicationController
   def index
-    @artists = Artist.all
+    if params[:artist_id]
+      @posts = Artist.find(params[:artist_id])
+    else
+      @artists = Artist.all.limit(200)
+    end
   end
 
   def show
