@@ -35,7 +35,7 @@ RSpec.describe SongsController do
     #   expect(controller).to set_flash[:alert]
     #   expect(response).to redirect_to artist_songs_path(@artist)
     # end
-    # 
+    #
     # it "returns 200 with valid artist song" do
     #   get :show, id: @song.id, artist_id: @artist.id
     #   expect(response).to be_ok
